@@ -11,10 +11,10 @@ Technology Choices:
 Frontend - React.js:
 
 Alternative: Angular
-Trade-offs: Designed to facilitate informal, collaborative skill sharing and acquisition.
+Trade-offs: Tailored for informal, collaborative skill sharing and acquisition.
 Locale Dependency:
 
-The platform is not constrained by a specific locale and is globally accessible.
+The platform is globally accessible, not confined to a specific locale.
 Risks
 
 Technical Risks:
@@ -29,13 +29,13 @@ Infrastructure
 
 Branching and Merging:
 
-The team will adopt the Git Flow methodology for branching and merging, providing a structured approach to feature development and release cycles.
+The Git Flow methodology will be adopted for structured branching and merging, guiding feature development and release cycles.
 Deployment Strategy:
 
-Utilizing Docker containers for consistent deployment across different environments, hosted on AWS for scalability and reliability.
+Utilizing Docker containers for consistent deployment across diverse environments, hosted on AWS for scalability and reliability.
 Data Population:
 
-Initial data will be populated through a combination of test data and user-generated content during the platform's onboarding process.
+Initial data will be populated through a blend of test data and user-generated content during the platform's onboarding process.
 Testing:
 
 Automated testing using tools like Jest and Django's built-in testing framework for both frontend and backend components. Continuous integration using GitHub Actions.
@@ -44,15 +44,15 @@ Existing Solutions
 Similar Products: LinkedIn Learning
 
 Similarities: Focused on learning and skill development.
-Differences: Emphasizes peer-to-peer knowledge exchange rather than formal courses.
+Differences: Emphasizes peer-to-peer knowledge exchange over formal courses.
 Meetup
 
 Similarities: Connects people with common interests.
 Differences: Specifically targets skill exchange, providing a structured platform for knowledge sharing.
-
 Team:
 
 Solo Developer:
+
 Name: Maryam AMRANI
 Role: Responsible for the entire project, including frontend and backend development, database management, UI/UX design, deployment, and overall project management.
-Reasoning: As the sole developer, I will take on all aspects of the project. This approach provides complete control and flexibility throughout the development process. The decision is made based on the understanding that a solo developer can efficiently manage and execute all tasks within the project scope.
+Reasoning: As the sole developer, I will have complete control and flexibility throughout the development process, efficiently managing and executing all tasks within the project scope.
