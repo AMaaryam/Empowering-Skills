@@ -6,6 +6,11 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/portfolio')
+def portfolio():
+    # Vous pouvez ajouter des données de projet à transmettre au template ici
+    return render_template('portfolio.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
