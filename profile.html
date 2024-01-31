@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering-Skills - Profile</title>
+
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        p,
+        form,
+        input,
+        footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Profile section styling */
+        #profile {
+            padding: 40px;
+        }
+
+        #profile h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Profile form styling */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Empowering-Skills</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section id="profile">
+        <h2>Your Profile</h2>
+
+        <!-- User information display -->
+        <div id="userInfo">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john@example.com</p>
+            <!-- Add more user information as needed -->
+        </div>
+
+        <!-- Profile form for editing information -->
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John Doe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="john@example.com" required>
+
+            <!-- Add more input fields for other user information -->
+
+            <button type="button" onclick="updateProfile()">Update Profile</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="contact.html">contact@empoweringskills.com</a></p>
+    </footer>
+
+    <script>
+        function updateProfile() {
+            // In a real application, you would perform an asynchronous request to the server here
+            // to update the user's profile information.
+
+            // For demonstration purposes, let's assume the form data is updated directly.
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+
+            // Update the displayed user information
+            const userInfo = document.getElementById("userInfo");
+            userInfo.innerHTML = `<p><strong>Name:</strong> ${nameInput.value}</p>
+                                  <p><strong>Email:</strong> ${emailInput.value}</p>`;
+        }
+    </script>
+</body>
+
+</html>
+

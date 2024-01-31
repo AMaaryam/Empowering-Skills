@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering-Skills - FAQ</title>
+
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* FAQ section styling */
+        #faq {
+            padding: 40px;
+        }
+
+        #faq h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ list styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        li button {
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        li .answer {
+            display: none;
+            padding: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Empowering-Skills</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- FAQ list -->
+        <ul>
+            <li>
+                <button onclick="toggleAnswer('faq1')">What is Empowering-Skills?</button>
+                <div id="faq1" class="answer">Empowering-Skills is a platform aimed at...</div>
+            </li>
+            <li>
+                <button onclick="toggleAnswer('faq2')">How can I propose a skill?</button>
+                <div id="faq2" class="answer">To propose a skill, visit the page...</div>
+            </li>
+            <!-- Add more FAQ items as needed -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="contact.html">contact@empoweringskills.com</a></p>
+    </footer>
+
+    <script>
+        function toggleAnswer(faqId) {
+            const answer = document.getElementById(faqId);
+
+            // Toggle the visibility of the answer
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
+

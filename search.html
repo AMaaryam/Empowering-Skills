@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering-Skills - Search</title>
+
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        p,
+        form,
+        input,
+        ul,
+        li,
+        footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Search section styling */
+        #search {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #search h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Search form styling */
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Results list styling */
+        #results {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Empowering-Skills</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section id="search">
+        <h2>Search Skills</h2>
+        <!-- Search form -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter skill keyword">
+            <button type="button" onclick="searchSkills()">Search</button>
+        </form>
+
+        <!-- Results list -->
+        <ul id="results"></ul>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="contact.html">contact@empoweringskills.com</a></p>
+    </footer>
+
+    <script>
+        function searchSkills() {
+            // In a real application, you would perform an asynchronous request to the server here
+            // and update the #results list with the returned data.
+
+            // For the sake of simplicity, let's assume a static list of skills for demonstration.
+            const skills = [
+                { name: "Web Development", description: "Building websites and web applications using HTML, CSS, and JavaScript." },
+                { name: "Graphic Design", description: "Creating visually appealing designs for digital and print media." },
+                // Add more skills as needed
+            ];
+
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const resultsList = document.getElementById("results");
+
+            // Clear previous results
+            resultsList.innerHTML = "";
+
+            // Filter skills based on the search input
+            const filteredSkills = skills.filter(skill => skill.name.toLowerCase().includes(searchInput) || skill.description.toLowerCase().includes(searchInput));
+
+            // Display the filtered skills
+            filteredSkills.forEach(skill => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<h3>${skill.name}</h3><p>${skill.description}</p>`;
+                resultsList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+
+</html>
+

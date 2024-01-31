@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering-Skills - Sign Up</title>
+
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        p,
+        form,
+        input,
+        footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Signup section styling */
+        #signup {
+            padding: 40px;
+        }
+
+        #signup h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Signup form styling */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Empowering-Skills</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+
+        <!-- Signup form -->
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="submitSignup()">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="contact.html">contact@empoweringskills.com</a></p>
+    </footer>
+
+    <script>
+        function submitSignup() {
+            // In a real application, you would perform an asynchronous request to the server here
+            // to handle the user registration.
+
+            // For demonstration purposes, let's assume the form data is validated directly.
+            const usernameInput = document.getElementById("username");
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+
+            // Display a simple alert with the entered data (replace this with actual registration logic)
+            alert(`Registration successful!\n\nUsername: ${usernameInput.value}\nEmail: ${emailInput.value}`);
+        }
+    </script>
+</body>
+
+</html>
+
