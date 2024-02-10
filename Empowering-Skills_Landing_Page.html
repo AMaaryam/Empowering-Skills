@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-
+    <title>Empowering-Skills</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -110,27 +109,21 @@
 
 <body>
     <header>
-        <h1>index</h1>
+        <h1>Empowering-Skills</h1>
+        <nav>
+            <ul>
+                <a href="Skills Presentation.html">Skills Presentation</a>
+                <a href="search.html">Search</a>
+                <!-- Add other section links as needed -->
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="skills.html">Skills</a>
-        <a href="search.html">Search</a>
-        <a href="profile.html">Profile</a>
-        <a href="signup.html">Sign Up</a>
-        <a href="login.html">Login</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="privacy.html">Privacy</a>
-    </nav>
-
-    <section id="intro">
-        <h2>Empowering-Skills: Fostering Knowledge Exchange</h2>
-        <p>Welcome to Empowering-Skills, an innovative platform designed to connect individuals seeking to enhance their skills with those passionate about sharing their expertise.</p>
-        <p>Our mission is to create a community-driven initiative dedicated to fostering knowledge exchange and skill empowerment.</p>
+    <section id="intro" class="active">
+        <img src="cover-image.jpg" alt="Empowering-Skills Cover Image">
+        <h2>Empower your skills and exchange knowledge</h2>
+        <p>An innovative platform to connect people seeking skills with those willing to share their expertise.</p>
+        <p>Empowering-Skills is more than just a platform; it's a community-driven initiative dedicated to fostering knowledge exchange and skill empowerment. Our mission is to connect individuals seeking to enhance their skills with those passionate about sharing their expertise.</p>
 
         <h3>Key Features:</h3>
         <ul>
@@ -142,31 +135,32 @@
         </ul>
 
         <h3>How It Works:</h3>
-        <ol>
+        <ul>
             <li><strong>Explore Skills:</strong> Browse through a variety of skills presented by our community.</li>
             <li><strong>Connect:</strong> Find individuals passionate about sharing their expertise.</li>
             <li><strong>Learn:</strong> Enhance your skills through meaningful interactions and collaborations.</li>
-        </ol>
+        </ul>
 
         <h4>Join Empowering-Skills today and embark on a journey of continuous learning and skill development.</h4>
-        <a href="#join" class="cta-button">Join Empowering-Skills</a>
+        <h4>Ready to empower and be empowered? .</h4>
+    
+        <a href="index.html" class="button">Access Empowering-Skills</a>
     </section>
+
+    <!-- Other sections -->
+
     <footer>
         <p>Contact us at <a href="contact.html">contact@monsite.com</a></p>
     </footer>
 
     <script>
-        // JavaScript for smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Add fade-in animation to the intro section
+            var introSection = document.getElementById('intro');
+            introSection.classList.add('active');
         });
     </script>
+
 </body>
 
 </html>
